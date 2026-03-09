@@ -23,7 +23,6 @@ public class Vetor {
         return elementos[pos];
     }
 
-    // PARTE D
     public void remove(int posicao) {
         if (posicao < 0 || posicao >= tamanho) {
             throw new IllegalArgumentException("Posição inválida");
@@ -37,7 +36,6 @@ public class Vetor {
         tamanho--;
     }
 
-    // busca simples
     public int busca(String elemento) {
         for (int i = 0; i < tamanho; i++) {
             if (elementos[i].equals(elemento)) {
@@ -47,7 +45,6 @@ public class Vetor {
         return -1;
     }
 
-    // PARTE E
     public boolean remove(String elemento) {
         int pos = busca(elemento);
 
@@ -59,7 +56,6 @@ public class Vetor {
         return true;
     }
 
-    // PARTE F
     public int indiceUltimo(String elemento) {
         for (int i = tamanho - 1; i >= 0; i--) {
             if (elementos[i].equals(elemento)) {
