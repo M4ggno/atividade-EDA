@@ -1,11 +1,15 @@
-
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        Pilha pilha = new Pilha(10);
 
-        for (int i = 1; i <= 5; i++) {
+        pilha.empilha("A");
+        pilha.empilha("B");
+        pilha.empilha("C");
 
-            System.out.println("i = " + i);
-        }
+        System.out.println("Topo: " + pilha.topo());
+
+        System.out.println("Removido: " + pilha.desempilha());
+
+        System.out.println("Topo: " + pilha.topo());
     }
 }
